@@ -17,8 +17,15 @@ struct DracoRaw {
 };
 
 
-// return interleaved data
+#if __cplusplus
 extern "C" {
+#endif
+    
+    // return interleaved data
     struct DracoRaw draco_decode(const char *compressedData, unsigned long size);
+    
+#if __cplusplus
 }
+#endif
+
 #endif /* draco_c_hpp */
