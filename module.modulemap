@@ -1,0 +1,4 @@
+module Draco [system] { 
+    header "include/draco/c/draco_c.h" 
+    link "draco"
+}
