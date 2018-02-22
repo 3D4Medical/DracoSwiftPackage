@@ -24,6 +24,9 @@ extern "C" {
     // return interleaved data
     struct DracoRaw draco_decode(const char *compressedData, unsigned long size);
     
+    // free data
+    void free_draco(struct DracoRaw dRaw);
+    
 #if __cplusplus
 }
 #endif
