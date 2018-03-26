@@ -43,7 +43,7 @@ extern "C" {
  @param bufferOut       - output - encoded buffer
  @param bufferOutLength - output length of bufferOut
  */
-bool draco_encode(float *vertices, unsigned long vertLength, unsigned int* indices, unsigned long indicesLength, DAttributeDescriptor *elements, const short elemCount, int quantization, char** bufferOut, unsigned long& bufferOutLength);
+bool draco_encode(float *vertices, unsigned long vertLength, unsigned int* indices, unsigned long indicesLength, struct DAttributeDescriptor *elements, const short elemCount, int quantization, char** bufferOut, unsigned long *bufferOutLength);
 
 /**
  Decode Buffer and write mesh to vertex and index arrays
@@ -59,7 +59,7 @@ bool draco_encode(float *vertices, unsigned long vertLength, unsigned int* indic
  @param descriptorOutLength - size of descriptorOut
  return false on error
  */
-bool draco_decode(char* buffer, unsigned long bufferLength, float** verticesOut, unsigned long& vertLength, unsigned int** indicesOut, unsigned long& indLength, DAttributeDescriptor** descriptorOut, unsigned long& descriptorOutLength);
+bool draco_decode(char* buffer, unsigned long bufferLength, float** verticesOut, unsigned long* vertLength, unsigned int** indicesOut, unsigned long *indLength, struct DAttributeDescriptor** descriptorOut, unsigned long *descriptorOutLength);
 
     
 #if __cplusplus
