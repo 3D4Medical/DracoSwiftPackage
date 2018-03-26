@@ -8,6 +8,8 @@
 #ifndef draco_c_h
 #define draco_c_h
 
+#include <stdbool.h> 
+
 typedef enum {
     DAttributeVertex = 0, // draco::GeometryAttribute::POSITION
     DAttributeNormal, // draco::GeometryAttribute::NORMAL
