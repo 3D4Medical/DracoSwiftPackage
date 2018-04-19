@@ -59,7 +59,7 @@ bool draco_encode(float *vertices, unsigned long vertLength, unsigned int* indic
  @param descriptorOutLength - size of descriptorOut
  return false on error
  */
-bool draco_decode(const char* buffer, unsigned long bufferLength, float** verticesOut, unsigned long* vertLength, unsigned int** indicesOut, unsigned long *indLength, struct DAttributeDescriptor** descriptorOut, unsigned long *descriptorOutLength);
+bool draco_decode(const char* buffer, unsigned long bufferLength, float** verticesOut, unsigned long* vertLength, unsigned int** indicesOut, unsigned long *indLength, struct DAttributeDescriptor** descriptorOut, unsigned long *descriptorOutLength, bool triangleStrip = false);
 
     
 #if __cplusplus
