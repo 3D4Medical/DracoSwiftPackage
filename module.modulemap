@@ -1,11 +1,11 @@
 module Draco [system] { 
     module macos {
-        header "draco_c.h" 
+        header "Draco.h" 
         link "draco"
     }
     
     module ios {
-        header "draco_c.h" 
+        header "Draco.h" 
         link "draco_ios"
     }
 }

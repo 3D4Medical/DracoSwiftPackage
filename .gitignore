@@ -1,4 +1,5 @@
 .DS_Store
 /.build
 /Packages
-/*.xcodeproj
+Draco.xcodeproj/project.xcworkspace/xcuserdata
+Draco.xcodeproj/xcuserdata
