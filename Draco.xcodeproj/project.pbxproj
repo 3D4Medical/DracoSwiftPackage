@@ -350,7 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DHKZ7WR43P;
+				DEVELOPMENT_TEAM = 4EWJ52878E;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -363,13 +363,15 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = com.3d4medical.Draco;
+				PRODUCT_BUNDLE_IDENTIFIER = org.draco;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -381,7 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = DHKZ7WR43P;
+				DEVELOPMENT_TEAM = 4EWJ52878E;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -394,12 +396,14 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = com.3d4medical.Draco;
+				PRODUCT_BUNDLE_IDENTIFIER = org.draco;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -423,12 +427,13 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = com.3d4medical.Draco;
+				PRODUCT_BUNDLE_IDENTIFIER = org.draco;
 				PRODUCT_NAME = Draco;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -452,13 +457,14 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = com.3d4medical.Draco;
+				PRODUCT_BUNDLE_IDENTIFIER = org.draco;
 				PRODUCT_NAME = Draco;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
