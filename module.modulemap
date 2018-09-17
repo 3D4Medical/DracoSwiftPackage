@@ -8,4 +8,9 @@ module Draco [system] {
         header "Draco.h" 
         link "draco_ios"
     }
+
+    module tvos {
+        header "Draco.h" 
+        link "draco_tvos"
+    }
 }

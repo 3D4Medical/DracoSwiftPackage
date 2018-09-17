@@ -13,6 +13,9 @@
 		D243D2DB20AC921B0086CAFD /* Draco.h in Headers */ = {isa = PBXBuildFile; fileRef = D243D2D920AC921B0086CAFD /* Draco.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D243D2DD20AC925B0086CAFD /* libdraco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D243D2DC20AC925B0086CAFD /* libdraco.a */; };
 		D243D2DF20AC92600086CAFD /* libdraco_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D243D2DE20AC92600086CAFD /* libdraco_ios.a */; };
+		D2B06511214FE3DE00309D6F /* Draco.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243D2BE20AC8D190086CAFD /* Draco.swift */; };
+		D2B06515214FE3DE00309D6F /* Draco.h in Headers */ = {isa = PBXBuildFile; fileRef = D243D2D920AC921B0086CAFD /* Draco.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B0651D214FEAF300309D6F /* libdraco_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B0651C214FEAF300309D6F /* libdraco_tvos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		D243D2D920AC921B0086CAFD /* Draco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Draco.h; sourceTree = SOURCE_ROOT; };
 		D243D2DC20AC925B0086CAFD /* libdraco.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdraco.a; sourceTree = "<group>"; };
 		D243D2DE20AC92600086CAFD /* libdraco_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdraco_ios.a; sourceTree = "<group>"; };
+		D2B0651A214FE3DE00309D6F /* Draco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Draco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B0651C214FEAF300309D6F /* libdraco_tvos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdraco_tvos.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D243D2DF20AC92600086CAFD /* libdraco_ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B06512214FE3DE00309D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B0651D214FEAF300309D6F /* libdraco_tvos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			children = (
 				D243D2B120AC8A370086CAFD /* Draco.framework */,
 				D243D2CD20AC91390086CAFD /* Draco.framework */,
+				D2B0651A214FE3DE00309D6F /* Draco.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D243D2DE20AC92600086CAFD /* libdraco_ios.a */,
+				D2B0651C214FEAF300309D6F /* libdraco_tvos.a */,
 				D243D2DC20AC925B0086CAFD /* libdraco.a */,
 			);
 			name = Frameworks;
@@ -108,6 +123,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D243D2DB20AC921B0086CAFD /* Draco.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B06514214FE3DE00309D6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B06515214FE3DE00309D6F /* Draco.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +173,24 @@
 			productReference = D243D2CD20AC91390086CAFD /* Draco.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D2B0650F214FE3DE00309D6F /* Draco tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2B06517214FE3DE00309D6F /* Build configuration list for PBXNativeTarget "Draco tvOS" */;
+			buildPhases = (
+				D2B06510214FE3DE00309D6F /* Sources */,
+				D2B06512214FE3DE00309D6F /* Frameworks */,
+				D2B06514214FE3DE00309D6F /* Headers */,
+				D2B06516214FE3DE00309D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Draco tvOS";
+			productName = "Draco iOS";
+			productReference = D2B0651A214FE3DE00309D6F /* Draco.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +223,7 @@
 			targets = (
 				D243D2B020AC8A370086CAFD /* Draco */,
 				D243D2CC20AC91390086CAFD /* Draco iOS */,
+				D2B0650F214FE3DE00309D6F /* Draco tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +237,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D243D2CB20AC91390086CAFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B06516214FE3DE00309D6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +266,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D243D2D820AC91B80086CAFD /* Draco.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B06510214FE3DE00309D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B06511214FE3DE00309D6F /* Draco.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +525,73 @@
 			};
 			name = Release;
 		};
+		D2B06518214FE3DE00309D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DHKZ7WR43P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Draco-tvos.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = org.draco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = Draco;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		D2B06519214FE3DE00309D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DHKZ7WR43P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Draco-tvos.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = org.draco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = Draco;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -494,6 +618,15 @@
 			buildConfigurations = (
 				D243D2D320AC91390086CAFD /* Debug */,
 				D243D2D420AC91390086CAFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2B06517214FE3DE00309D6F /* Build configuration list for PBXNativeTarget "Draco tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B06518214FE3DE00309D6F /* Debug */,
+				D2B06519214FE3DE00309D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
