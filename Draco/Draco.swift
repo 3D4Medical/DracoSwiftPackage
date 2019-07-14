@@ -17,7 +17,8 @@ public func uncompressDracoData(_ data:Data, triangleStrip:Bool = false) -> (Dat
     var indicies:Data = Data()
     var verticies:Data = Data()
     var stride:Int = 0
-    data.withUnsafeBytes {(uint8Ptr: UnsafePointer<Int8>) in
+    data.withUnsafeBytes { (unsafeBufferPointer:UnsafeRawBufferPointer) in
+        let uint8Ptr = unsafeBufferPointer.bindMemory(to: Int8.self).baseAddress
         
         var verts:UnsafeMutablePointer<Float>?
         var lengthVerts:UInt = 0
